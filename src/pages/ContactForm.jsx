@@ -30,20 +30,20 @@ export function ContactForm() {
         name="from_name"
         placeholder="Seu nome"
         required
-        className="p-2 rounded "
+        className="p-2 rounded bg-[#151719]"
       />
       <input
         type="email"
         name="reply_to"
         placeholder="Seu e-mail"
         required
-        className="p-2 rounded"
+        className="p-2 rounded bg-[#151719]"
       />
       <textarea
         name="message"
         placeholder="Sua mensagem"
         required
-        className="p-2 rounded"
+        className="p-2 rounded bg-[#151719]"
       />
       <button
         type="submit"

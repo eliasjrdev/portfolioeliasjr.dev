@@ -1,11 +1,12 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 export function ContactForm() {
   const form = useRef();
-
+  const [loading, setLoading] = useState(false);
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true); 
 
     emailjs.sendForm(
       import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -14,13 +15,15 @@ export function ContactForm() {
       import.meta.env.VITE_EMAILJS_PUBLIC_KEY
     )
       .then(() => {
+        setLoading(false); 
         alert('Mensagem enviada com sucesso!');
-      }, (error) => {
+        e.target.reset(); 
+      })
+      .catch((error) => {
+        setLoading(false); 
         console.log(error.text);
         alert('Ocorreu um erro. Tente novamente.');
       });
-
-    e.target.reset();
   };
 
   return (
@@ -47,11 +50,12 @@ export function ContactForm() {
       />
       <button
         type="submit"
-        className="bg-[#1F2226] w-80 p-2 
-        text-[#FF014F] cursor-pointer rounded-sm shadow-[6px_9px_13px_0px_rgba(0,_0,_0,_0.1)] "
+        disabled={loading}
+        className={`bg-[#1F2226] w-80 p-2 text-[#FF014F] cursor-pointer rounded-sm shadow-[6px_9px_13px_0px_rgba(0,_0,_0,_0.1)] ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
       >
-        Enviar Mensagem
+        {loading ? "Enviando..." : "Enviar Mensagem"}
       </button>
+
     </form>
   );
 }

@@ -7,3 +7,16 @@ body{
     background-color:#212428 ;
     height: 100vh;
 }
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-slide {
+  animation: slide 15s linear infinite;
+}

@@ -10,7 +10,7 @@ import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiVite, SiTailwin
 function Home() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     return (
-        <div className='flex flex-col lg:flex-row w-full min-h-screen bg-[#212428] font-medium '>
+        <div className='flex flex-col lg:flex-row w-full min-h-screen bg-[#212428] font-medium'>
             <div className='lg:w-1/2 lg:items-end flex flex-col '>
                 <header className='lg:w-4/5 lg:justify-center lg:items-start w-full h-full pt-4 flex flex-col items-center '>
                     <img src={imgperfil} alt="Imagem de Perfil" className='mb-2 border-4 border-[#747B85] rounded-full ' />

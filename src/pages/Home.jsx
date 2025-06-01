@@ -44,7 +44,7 @@ function Home() {
                         </div>
                         <div className='lg:w-full flex flex-col justify-center h-42 w-90 shadow-[-1px_6px_16px_0px_rgba(5,_5,_5,_0.4)] p-3 rounded-lg overflow-hidden'>
                             <h2 className='text-white text-[24px] mb-4'>Minhas habilidades</h2>
-                            <div className="relative w-full overflow-hidden">
+                            <div className="relative w-full overflow-hidden group cursor-pointer">
                                 <div className="flex animate-slide gap-10 w-max">
                                     {[...Array(2)].map((_, i) => (
                                         <div key={i} className="flex gap-10 text-4xl px-2">

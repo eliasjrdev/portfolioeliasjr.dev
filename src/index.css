@@ -20,3 +20,7 @@ body{
 .animate-slide {
   animation: slide 15s linear infinite;
 }
+
+.group:hover .animate-slide {
+  animation-play-state: paused;
+}

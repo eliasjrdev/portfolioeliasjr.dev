@@ -12,17 +12,17 @@ function Home() {
     return (
         <div className='flex flex-col lg:flex-row w-full min-h-screen bg-[#212428] font-medium'>
             <div className='lg:w-1/2 lg:items-end flex flex-col '>
-                <header className='lg:w-4/5 lg:justify-center lg:items-start w-full h-full pt-4 flex flex-col items-center '>
+                <header className='lg:w-4/5 lg:justify-center lg:items-start w-full h-full pt-4 flex flex-col items-center'>
                     <img src={imgperfil} alt="Imagem de Perfil" className='mb-2 border-4 border-[#747B85] rounded-full ' />
-                    <div className='lg:h-auto lg:items-start flex flex-col items-center h-9/10'>
-                        <h1 className='mb-2 lg:pt-3 lg:w-96 lg:text-start font-medium sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl text-white text-[25px] pb-2 text-center'>Olá, eu sou<br className="hidden lg:block" />
+                    <div className='lg:h-auto lg:items-start flex flex-col items-center'>
+                        <h1 className='lg:pt-3 lg:w-96 lg:text-start font-medium sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl text-white text-[25px] text-center'>Olá, eu sou<br className="hidden lg:block" />
                             <span className='text-[#FF014F]' > Elias Costa </span><br />
                             Desenvolvedor de Software
                         </h1>
-                        <p className='mb-4  lg:text-start lg:p-0 text-[#747B85] text-[18px]  text-center p-2 text-base sm:text-lg md:text-xl lg:text-2xl'>
+                        <p className='lg:text-start lg:p-0 text-[#747B85] text-[18px]  text-center text-base sm:text-lg md:text-xl lg:text-2xl'>
                             Sou programador Front-end, criador<br /> de conteúdo tech na internet, apaixonado<br className="hidden lg:block" /> por tecnologia, ciência e aprendizado.
                         </p>
-                        <div className='h-19 w-64  flex justify-between items-center '>
+                        <div className='h-19 w-64  flex justify-between items-center'>
                             <a href="https://www.instagram.com/eliasjr.dev/?hl=pt-br" target="_blank" rel="noopener noreferrer"><SiInstagram size={40} title="Instagram" className="text-white dark:text-white transition-transform duration-300 ease-in-out lg:hover:scale-110" /></a>
                             <a href="https://www.linkedin.com/in/elias-c/" target="_blank" rel="noopener noreferrer"><SiLinkedin size={40} title="Linkedin" className="text-white dark:text-white transition-transform duration-300 ease-in-out lg:hover:scale-110" /></a>
                             <a href="https://github.com/eliasjrdev" target="_blank" rel="noopener noreferrer"><SiGithub size={40} title="GitHub" className="text-white dark:text-white lg: transition-transform duration-300 ease-in-out lg:hover:scale-110" /></a>
@@ -30,7 +30,7 @@ function Home() {
                     </div>
                 </header>
             </div>
-            <div className="lg:w-1/2 lg:p-0 lg:pt-5 lg:h-screen lg:overflow-y-auto p-6 flex flex-col items-center">
+            <div className="lg:w-1/2 lg:p-0 lg:pt-5 lg:h-screen lg:overflow-y-auto p-6 pt-2 flex flex-col items-center">
                 <main className='lg:pl-5 lg:w-full lg:items-start flex flex-col items-center '>
                     <div className='lg:w-5/6 flex flex-col gap-4 '>
                         <div className='lg:w-full lg:flex lg:flex-col lg:justify-center lg:h-82 h-full w-90 shadow-[-1px_6px_16px_0px_rgba(5,_5,_5,_0.4)] p-3 rounded-lg'>

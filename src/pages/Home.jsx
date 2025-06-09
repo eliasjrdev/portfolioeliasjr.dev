@@ -30,19 +30,26 @@ function Home() {
                     </div>
                 </header>
             </div>
-            <div className="lg:w-1/2 lg:p-0 lg:pt-5 h-screen overflow-y-auto p-6 flex flex-col items-center">
+            <div className="lg:w-1/2 lg:p-0 lg:pt-5 lg:h-screen lg:overflow-y-auto p-6 flex flex-col items-center">
                 <main className='lg:pl-5 lg:w-full lg:items-start flex flex-col items-center '>
                     <div className='lg:w-5/6 flex flex-col gap-4 '>
-                        <div className='lg:w-full lg:flex lg:flex-col lg:justify-center h-52 w-90 shadow-[-1px_6px_16px_0px_rgba(5,_5,_5,_0.4)] p-3 rounded-lg'>
+                        <div className='lg:w-full lg:flex lg:flex-col lg:justify-center lg:h-82 h-full w-90 shadow-[-1px_6px_16px_0px_rgba(5,_5,_5,_0.4)] p-3 rounded-lg'>
                             <h2 className='text-white text-[24px]'>Sobre mim</h2>
                             <p className='text-[#747B85]'>
-                                Formado em Análise e desenvolvimento de sistemas,
-                                meu foco é desenvolver soluções de software que impactam da melhor forma
-                                possível na experiência do usuário.
-                                Estou sempre em busca de evolução e aprendizado constante.
+                                Minha carreira teve início em 2020 quando entrei na faculdade
+                                de análise e desenvolvimento de sistemas.
+                                Desde então, tenho atuado no desenvolvimento de aplicações web com foco em práticas modernas
+                                de desenvolvimento de software. Venho construindo projetos práticos utilizando
+                                tecnologias como  JavaScript, TypeScript, React, Next, 
+                                buscando sempre aplicar boas práticas de programação,
+                                versionamento com Git e GitHub integração com APIs, Criando interfaces
+                                responsivas e otimizadas, fazendo integração com Firebase
+                                para armazenamento de dados.
+                                Mantenho uma rotina contínua  de estudos,
+                                participação em comunidades, desafios de lógica e algoritmo, sempre em busca de evolução.
                             </p>
                         </div>
-                        <div className='lg:w-full flex flex-col justify-center h-42 w-90 shadow-[-1px_6px_16px_0px_rgba(5,_5,_5,_0.4)] p-3 rounded-lg overflow-hidden'>
+                        <div className='lg:w-full flex flex-col justify-center h-full w-90 shadow-[-1px_6px_16px_0px_rgba(5,_5,_5,_0.4)] p-3 rounded-lg overflow-hidden'>
                             <h2 className='text-white text-[24px] mb-4'>Minhas habilidades</h2>
                             <div className="relative w-full overflow-hidden group cursor-pointer">
                                 <div className="flex animate-slide gap-10 w-max">
@@ -117,11 +124,11 @@ function Home() {
                                     - Código limpo, modular e de fácil manutenção.
                                 </p>
                             </div>
-                            <a href="https://vencefacil.web.app/"><Button text="Acesse a versão atual" className="w-[200px] lg:w-1/2"  /></a>
+                            <a href="https://vencefacil.web.app/"><Button text="Acesse a versão atual" className="w-[200px] lg:w-1/2" /></a>
                         </div>
                     </div>
                     <div className='font-medium h-25 lg:h-20 flex flex-col lg:flex-row w-90 lg:lg:w-5/6 items-center justify-between lg:justify-evenly mt-5 lg:mt-0'>
-                        <a href="https://drive.google.com/file/d/1eP-95pOtEvI9e9D72fqi435g1odLpzYk/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="w-full"><Button text="Veja meu curriculo"/></a>
+                        <a href="https://drive.google.com/file/d/1eP-95pOtEvI9e9D72fqi435g1odLpzYk/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="w-full"><Button text="Veja meu curriculo" /></a>
                         <Button
                             onClick={() => setIsModalOpen(true)}
                             text="Entre em contato comigo"
@@ -131,8 +138,7 @@ function Home() {
                         <h2 className="text-white text-2xl mb-4">Entre em contato</h2>
                         <ContactForm />
                     </Modal>
-                    <footer className='flex flex-col items-center block lg:hidden'>
-
+                    <footer className='items-center block lg:hidden mt-5'>
                         <span className='text-white p-3 target="_blank" rel="noopener noreferrer"'>&copy; {new Date().getFullYear()} Eliasjr.dev</span>
                     </footer>
                 </main>

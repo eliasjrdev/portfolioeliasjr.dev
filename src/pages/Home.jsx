@@ -128,7 +128,8 @@ function Home() {
                         </div>
                     </div>
                     <div className='font-medium h-25 lg:h-20 flex flex-col lg:flex-row w-90 lg:lg:w-5/6 items-center justify-between lg:justify-evenly mt-5 lg:mt-0'>
-                        <a href="https://drive.google.com/file/d/1eP-95pOtEvI9e9D72fqi435g1odLpzYk/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="w-full"><Button text="Veja meu curriculo" /></a>
+                        <a href="https://drive.google.com/file/d/1FAoVdOjtOalx3fy4hJnOR7KoWjgF3dqq/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="w-full">
+                        <Button text="Veja meu curriculo" /></a>
                         <Button
                             onClick={() => setIsModalOpen(true)}
                             text="Entre em contato comigo"

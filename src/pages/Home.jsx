@@ -1,6 +1,6 @@
 import React from 'react';
 import imgperfil from '../img/imgperfil.jpg';
-import imgproject from '../img/imgproject.png';
+import imgproject from '../img/img3.png';
 import { Button } from "../components/Button";
 import { useState } from 'react';
 import { ContactForm } from './ContactForm';
@@ -15,12 +15,12 @@ function Home() {
                 <header className='lg:w-4/5 lg:justify-center lg:items-start w-full h-full pt-4 flex flex-col items-center'>
                     <img src={imgperfil} alt="Imagem de Perfil" className='mb-2 border-4 border-[#747B85] rounded-full ' />
                     <div className='lg:h-auto lg:items-start flex flex-col items-center'>
-                        <h1 className='lg:pt-3 lg:w-96 lg:text-start font-medium sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl text-white text-[25px] text-center'>Olá, eu sou<br className="hidden lg:block" />
+                        <h1 className='pb-2 lg:pt-3 lg:w-96 lg:text-start font-medium sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl text-white text-[25px] text-center'>Olá, eu sou<br className="hidden lg:block" />
                             <span className='text-[#FF014F]' > Elias Costa </span><br />
                             Desenvolvedor de Software
                         </h1>
-                        <p className='lg:text-start lg:p-0 text-[#747B85] text-[18px]  text-center text-base sm:text-lg md:text-xl lg:text-2xl'>
-                            Sou programador Front-end, criador<br /> de conteúdo tech na internet, apaixonado<br className="hidden lg:block" /> por tecnologia, ciência e aprendizado.
+                        <p className='pb-2 lg:text-start lg:p-0 text-[#747B85] text-[18px]  text-center text-base sm:text-lg md:text-xl lg:text-2xl'>
+                            Sou programador Front-end, criador<br /> de conteúdo tech na internet, apaixonado<br className="hidden lg:block" /> por tecnologia, ciência e educação.
                         </p>
                         <div className='h-19 w-64  flex justify-between items-center'>
                             <a href="https://www.instagram.com/eliasjr.dev/?hl=pt-br" target="_blank" rel="noopener noreferrer"><SiInstagram size={40} title="Instagram" className="text-white dark:text-white transition-transform duration-300 ease-in-out lg:hover:scale-110" /></a>
@@ -33,22 +33,6 @@ function Home() {
             <div className="lg:w-1/2 lg:p-0 lg:pt-5 lg:h-screen lg:overflow-y-auto p-6 pt-2 flex flex-col items-center">
                 <main className='lg:pl-5 lg:w-full lg:items-start flex flex-col items-center '>
                     <div className='lg:w-5/6 flex flex-col gap-4 '>
-                        <div className='lg:w-full lg:flex lg:flex-col lg:justify-center lg:h-82 h-full w-90 shadow-[-1px_6px_16px_0px_rgba(5,_5,_5,_0.4)] p-3 rounded-lg'>
-                            <h2 className='text-white text-[24px]'>Sobre mim</h2>
-                            <p className='text-[#747B85]'>
-                                Minha carreira teve início em 2020 quando entrei na faculdade
-                                de análise e desenvolvimento de sistemas.
-                                Desde então, tenho atuado no desenvolvimento de aplicações web com foco em práticas modernas
-                                de desenvolvimento de software. Venho construindo projetos práticos utilizando
-                                tecnologias como  JavaScript, TypeScript, React, Next, 
-                                buscando sempre aplicar boas práticas de programação,
-                                versionamento com Git e GitHub integração com APIs, Criando interfaces
-                                responsivas e otimizadas, fazendo integração com Firebase
-                                para armazenamento de dados.
-                                Mantenho uma rotina contínua  de estudos,
-                                participação em comunidades, desafios de lógica e algoritmo, sempre em busca de evolução.
-                            </p>
-                        </div>
                         <div className='lg:w-full flex flex-col justify-center h-full w-90 shadow-[-1px_6px_16px_0px_rgba(5,_5,_5,_0.4)] p-3 rounded-lg overflow-hidden'>
                             <h2 className='text-white text-[24px] mb-4'>Minhas habilidades</h2>
                             <div className="relative w-full overflow-hidden group cursor-pointer">

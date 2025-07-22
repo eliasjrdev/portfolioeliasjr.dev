@@ -19,7 +19,7 @@ function Home() {
                             <span className='text-[#FF014F]' > Elias Costa </span><br />
                             Desenvolvedor de Software
                         </h1>
-                        <p className='pb-2 lg:text-start lg:p-0 text-[#747B85] text-[18px]  text-center text-base sm:text-lg md:text-xl lg:text-2xl'>
+                        <p className='pb-2 text lg:text-start lg:p-0 text-[#747B85] text-[18px]  text-center text-base sm:text-lg md:text-xl lg:text-2xl'>
                             Sou programador Front-end, criador<br /> de conteúdo tech na internet, apaixonado<br className="hidden lg:block" /> por tecnologia, ciência e educação.
                         </p>
                         <div className='h-19 w-64  flex justify-between items-center'>
@@ -31,8 +31,8 @@ function Home() {
                 </header>
             </div>
             <div className="lg:w-1/2 lg:p-0 lg:pt-5 lg:h-screen lg:overflow-y-auto p-6 pt-2 flex flex-col items-center">
-                <main className='lg:pl-5 lg:w-full lg:items-start flex flex-col items-center '>
-                    <div className='lg:w-5/6 flex flex-col gap-4 '>
+                <main className='lg:pl-5 lg:w-full lg:items-start flex flex-col items-center'>
+                    <div className='lg:w-5/6 flex flex-col gap-4'>
                         <div className='lg:w-full flex flex-col justify-center h-full w-90 shadow-[-1px_6px_16px_0px_rgba(5,_5,_5,_0.4)] p-3 rounded-lg overflow-hidden'>
                             <h2 className='text-white text-[24px] mb-4'>Minhas habilidades</h2>
                             <div className="relative w-full overflow-hidden group cursor-pointer">
@@ -80,7 +80,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className=' lg:w-full h-auto flex flex-col justify-center w-90 shadow-[-1px_6px_16px_0px_rgba(5,_5,_5,_0.4)] p-3 rounded-lg '>
+                        <div className='mb-4 lg:w-full h-auto flex flex-col justify-center w-90 shadow-[-1px_6px_16px_0px_rgba(5,_5,_5,_0.4)] p-3 rounded-lg '>
                             <h2 className='text-white text-[24px] '>Meus projetos</h2>
                             <div className="flex flex-wrap justify-center items-center p-2 gap-4 ">
                                 <img src={imgproject} alt="Imagem de Perfil" className='rounded-md ' />
@@ -111,19 +111,22 @@ function Home() {
                             <a href="https://vencefacil.web.app/"><Button text="Acesse a versão atual" className="w-[200px] lg:w-1/2" /></a>
                         </div>
                     </div>
-                    <div className='font-medium h-25 lg:h-20 flex flex-col lg:flex-row w-90 lg:lg:w-5/6 items-center justify-between lg:justify-evenly mt-5 lg:mt-0'>
-                        <a href="https://drive.google.com/file/d/1FAoVdOjtOalx3fy4hJnOR7KoWjgF3dqq/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="w-full">
-                        <Button text="Veja meu curriculo" /></a>
+                    <div className='lg:w-5/6 w-90 flex flex-col gap-4 shadow-[-1px_6px_16px_0px_rgba(5,_5,_5,_0.4)] p-3 rounded-lg'>
+                        <a href="https://drive.google.com/file/d/19NMrJFTYUu4CrdYVmw7G52PJPy52Lnrk/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="w-full">
+                        <Button text="Veja meu curriculo em português" className='shadow-[-1px_6px_16px_0px_rgba(5,_5,_5,_0.4)]' /></a>
+                        <a href="https://drive.google.com/file/d/10TMfq8u3nVKydQzOzfRpmFGH2y52Q0Ro/view?usp=sharing"><Button text="Check out my resume in English" className="w-[200px] lg:w-1/2" /></a>
                         <Button
-                            onClick={() => setIsModalOpen(true)}
-                            text="Entre em contato comigo"
-                        />
+                                onClick={() => setIsModalOpen(true)}
+                                text="Entre em contato comigo"
+                                className='shadow-[-1px_6px_16px_0px_rgba(5,_5,_5,_0.4)]'
+                            />
                     </div>
+
                     <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
                         <h2 className="text-white text-2xl mb-4">Entre em contato</h2>
                         <ContactForm />
                     </Modal>
-                    <footer className='items-center block lg:hidden mt-5'>
+                    <footer className='lg:w-5/6 flex justify-center h-11'>
                         <span className='text-white p-3 target="_blank" rel="noopener noreferrer"'>&copy; {new Date().getFullYear()} Eliasjr.dev</span>
                     </footer>
                 </main>

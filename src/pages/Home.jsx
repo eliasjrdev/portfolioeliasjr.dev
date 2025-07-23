@@ -112,9 +112,9 @@ function Home() {
                         </div>
                     </div>
                     <div className='lg:w-5/6 w-90 flex flex-col gap-4 shadow-[-1px_6px_16px_0px_rgba(5,_5,_5,_0.4)] p-3 rounded-lg'>
-                        <a href="https://drive.google.com/file/d/19NMrJFTYUu4CrdYVmw7G52PJPy52Lnrk/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="w-full">
+                        <a href="https://drive.google.com/file/d/1k4_Jp0WGX9tHaQh2qQNUvHiJMtuvoinK/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="w-full">
                         <Button text="Veja meu curriculo em português" className='shadow-[-1px_6px_16px_0px_rgba(5,_5,_5,_0.4)]' /></a>
-                        <a href="https://drive.google.com/file/d/10TMfq8u3nVKydQzOzfRpmFGH2y52Q0Ro/view?usp=sharing"><Button text="Check out my resume in English" className="w-[200px] lg:w-1/2" /></a>
+                        <a href="https://drive.google.com/file/d/19yju2F14GDMKKCDq-x7iJ8ejmuRsy0Gm/view?usp=sharing"><Button text="Check out my resume in English" className="w-[200px] lg:w-1/2" /></a>
                         <Button
                                 onClick={() => setIsModalOpen(true)}
                                 text="Entre em contato comigo"
